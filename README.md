@@ -35,4 +35,31 @@
 ![image](https://github.com/user-attachments/assets/b55a3ab1-aec8-47fd-9583-9d4576f615ed)
 
 
-
+19) sudo vi docker-compose.yaml команда открывает файл в текстовом редакторе , вставляем туда команды: node-exporter: 
+    image: prom/node-exporter 
+    volumes: 
+      - /proc:/host/proc:ro 
+      - /sys:/host/sys:ro 
+      - /:/rootfs:ro 
+    container_name: exporter 
+    hostname: exporter 
+    command: 
+      - --path.procfs=/host/proc 
+      - --path.sysfs=/host/sys 
+      - --collector.filesystem.ignored-mount-points 
+      - ^/(sys|proc|dev|host|etc|rootfs/var/lib/docker/containers|rootfs/var/lib/docker/overlay2|rootfs/run/docker/netns|rootfs/var/lib/docker/aufs)($$|/) 
+    ports: 
+      - 9100:9100 
+    restart: unless-stopped 
+    environment: 
+      TZ: "Europe/Moscow" 
+    networks: 
+      - default
+20)переходим на сайт localhost:3000
+логин и пароль admin admine
+21) создаем Dashboard
+22) жмем кнопку +Add visualizationа ,а затем "Configure a new data source"
+23) connection http://prometheus:9090
+24) Authentication потом Basic Authentication (admin admin)
+    victoriametrics
+25) 
