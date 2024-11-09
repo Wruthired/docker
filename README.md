@@ -31,3 +31,8 @@
 16)sudo chmod +x /usr/bin/docker-compose
 17) docker-compose --version (проверяем версию)
 18) sudo docker compose up -d команда создает контейнера с правами супер пользователя 
+
+![image](https://github.com/user-attachments/assets/b55a3ab1-aec8-47fd-9583-9d4576f615ed)
+
+
+
