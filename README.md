@@ -9,5 +9,6 @@
 7)cp config/* /mnt/common_volume/swarm/grafana/config/
 8)mv grafana.yaml docker-compose.yaml
 9)sudo yum install wget 
-10)sudo wget -P /etc/yum.repos.d/ https://download.docker.com/linux/centos/docker-ce.repo скачиваем репозиторий ![Uploading image.png…]()
+10)sudo wget -P /etc/yum.repos.d/ https://download.docker.com/linux/centos/docker-ce.repo скачиваем репозиторий ![image](https://github.com/user-attachments/assets/38b29164-9643-48f2-afb3-7092d18f3d8b)
+
 
