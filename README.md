@@ -67,4 +67,8 @@
 27) echo -e "# TYPE OILCOINT_metric1 gauge\nOILCOINT_metric1 0" | curl --data-binary @- http://localhost:8428/api/v1/import/prometheus
 28) curl -G 'http://localhost:8428/api/v1/query' --data-urlencode 'query=OILCOINT_metric1'
 29) вставляем OILCOINT_metric1
-30) 
+
+    ![image](https://github.com/user-attachments/assets/10c45835-9719-4e3d-a259-ea18ed280ddb)
+
+
+![image](https://github.com/user-attachments/assets/019013c9-b592-4397-b7e9-ad723d739c2a)
