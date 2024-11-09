@@ -62,4 +62,9 @@
 23) connection http://prometheus:9090
 24) Authentication потом Basic Authentication (admin admin)
     victoriametrics
-25) 
+25) cd grafana_stack_for_docker
+26) sudo vi docker-compose.yaml
+27) echo -e "# TYPE OILCOINT_metric1 gauge\nOILCOINT_metric1 0" | curl --data-binary @- http://localhost:8428/api/v1/import/prometheus
+28) curl -G 'http://localhost:8428/api/v1/query' --data-urlencode 'query=OILCOINT_metric1'
+29) вставляем OILCOINT_metric1
+30) 
