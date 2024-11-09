@@ -28,6 +28,6 @@
 
 ![image](https://github.com/user-attachments/assets/90c7148d-8fd4-40c6-b80c-9257dac06b7f)
 
-
-
-
+16)sudo chmod +x /usr/bin/docker-compose
+17) docker-compose --version (проверяем версию)
+18) sudo docker compose up -d команда создает контейнера с правами супер пользователя 
