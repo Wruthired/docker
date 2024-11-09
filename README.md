@@ -26,3 +26,8 @@
 14) COMVER=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep 'tag_name' | cut -d\" -f4)
 15)sudo curl -L "https://github.com/docker/compose/releases/download/$COMVER/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose
 
+![image](https://github.com/user-attachments/assets/90c7148d-8fd4-40c6-b80c-9257dac06b7f)
+
+
+
+
