@@ -21,4 +21,8 @@
 ![image](https://github.com/user-attachments/assets/0f7c4b29-9d91-41f0-889d-0b3b1139cf9d)
 
 (со всем соглашаемся и скачиваем)
+12) sudo systemctl enable docker --now 
+13) sudo yum install curl
+14) COMVER=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep 'tag_name' | cut -d\" -f4)
+15)sudo curl -L "https://github.com/docker/compose/releases/download/$COMVER/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose
 
