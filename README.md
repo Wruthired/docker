@@ -61,12 +61,16 @@
 22) жмем кнопку +Add visualizationа ,а затем "Configure a new data source"
 23) connection http://prometheus:9090
 24) Authentication потом Basic Authentication (admin admin)
+
+    ![image](https://github.com/user-attachments/assets/90e538c2-6b58-4267-922c-75d665d13fcb)
+
+
     victoriametrics
-25) cd grafana_stack_for_docker
-26) sudo vi docker-compose.yaml
-27) echo -e "# TYPE OILCOINT_metric1 gauge\nOILCOINT_metric1 0" | curl --data-binary @- http://localhost:8428/api/v1/import/prometheus
-28) curl -G 'http://localhost:8428/api/v1/query' --data-urlencode 'query=OILCOINT_metric1'
-29) вставляем OILCOINT_metric1
+26) cd grafana_stack_for_docker
+27) sudo vi docker-compose.yaml
+28) echo -e "# TYPE OILCOINT_metric1 gauge\nOILCOINT_metric1 0" | curl --data-binary @- http://localhost:8428/api/v1/import/prometheus
+29) curl -G 'http://localhost:8428/api/v1/query' --data-urlencode 'query=OILCOINT_metric1'
+30) вставляем OILCOINT_metric1
 
     ![image](https://github.com/user-attachments/assets/10c45835-9719-4e3d-a259-ea18ed280ddb)
 
