@@ -72,6 +72,7 @@
       TZ: "Europe/Moscow" 
     networks: 
       - default
+        
 20)переходим на сайт localhost:3000
 
 логин и пароль admin admine
